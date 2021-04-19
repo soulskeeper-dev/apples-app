@@ -78,7 +78,21 @@ class Apple extends ActiveRecord
      */
     public function getIsRotten()
     {
-    	return $this->status == self::STATUS_FELL && $this->fell - $this->created >= 5*60*60;
+    	return $this->status == self::STATUS_FELL && time() - $this->fell >= 5*60*60;
+    }
+
+    /**
+     * Возвращает начвание цвета яблока
+     * @return string
+     */
+    public function getColorName()
+    {
+    	switch ($this->color) {
+    		case 'green': return 'Зеленое';
+    		case 'red': return 'Красное';
+    		case 'yellow': return 'Желтое';
+    	}
+    	return 'Неизвестного цвета';
     }
 
     /**

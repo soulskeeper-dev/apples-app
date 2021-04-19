@@ -18,6 +18,7 @@ AppAsset::register($this);
     <?php $this->registerCsrfMetaTags() ?>
     <title><?= Html::encode($this->title) ?></title>
     <?php $this->head() ?>
+    <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
 </head>
 <body class="blank">
 <?php $this->beginBody() ?>
