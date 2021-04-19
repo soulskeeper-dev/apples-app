@@ -6,7 +6,7 @@ use yii\helpers\Html;
 
 /* @var $this yii\web\View */
 
-$this->title = 'Яблочный сад';
+$this->title = 'Яблоневый сад';
 ?>
 
     <div class="top-panel">
